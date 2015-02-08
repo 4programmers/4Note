@@ -1,4 +1,4 @@
-package net._4programmers._4note;
+package net._4programmers._4note.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
