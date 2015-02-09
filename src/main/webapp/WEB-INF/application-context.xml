@@ -14,6 +14,7 @@
         <property name="jpaProperties">
             <props>
                 <prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
+                <prop key="hibernate.hbm2dll.auto">create-drop</prop>
             </props>
         </property>
 
