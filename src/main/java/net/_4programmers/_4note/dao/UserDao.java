@@ -5,7 +5,6 @@ import net._4programmers._4note.entities.User;
 import java.util.List;
 
 public interface UserDao {
-
     User getUserById(Integer id);
 
     List<User> getAll();

@@ -11,7 +11,6 @@ import java.util.List;
 
 @Controller
 public class UsersController {
-
     @Autowired
     private UserDao userDao;
 
@@ -23,9 +22,13 @@ public class UsersController {
     @RequestMapping("/users/{userId}")
     public String getUser(@PathVariable int userId, Model model){
         User user = userDao.getUserById(userId);
-        if(user == null)
+
+        if(user == null) {
             return "redirect:/";
+        }
+
         model.addAttribute("user", userDao.getUserById(userId));
+
         return "user";
     }
 }

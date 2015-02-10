@@ -2,19 +2,14 @@ package net._4programmers._4note.dao.impl;
 
 import net._4programmers._4note.dao.UserDao;
 import net._4programmers._4note.entities.User;
-import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Repository;
-
 import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
 import javax.persistence.PersistenceContext;
 import javax.transaction.Transactional;
-import java.util.ArrayList;
 import java.util.List;
 
 @Repository
 public class UserDaoImpl implements UserDao {
-
     @PersistenceContext
     private EntityManager em;
 
@@ -32,5 +27,4 @@ public class UserDaoImpl implements UserDao {
     public void deleteUser(User user) {
         em.remove(user);
     }
-
 }
