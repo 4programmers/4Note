@@ -14,12 +14,7 @@ public class UsersController {
     @Autowired
     private UserDao userDao;
 
-    @RequestMapping("/")
-    public String index(Model model){
-        return "index";
-    }
-
-    @RequestMapping("/users/{userId}")
+    @RequestMapping("/user/{userId}")
     public String getUser(@PathVariable int userId, Model model){
         User user = userDao.getUserById(userId);
 
