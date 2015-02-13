@@ -17,6 +17,7 @@
     <context:component-scan base-package="net._4programmers._4note" />
 
     <mvc:annotation-driven />
+    <mvc:resources mapping="/resources/**" location="/resources/"/>
 
     <tx:annotation-driven />
 

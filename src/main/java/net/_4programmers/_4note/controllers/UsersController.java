@@ -17,13 +17,11 @@ public class UsersController {
     @RequestMapping("/user/{userId}")
     public String getUser(@PathVariable int userId, Model model){
         User user = userDao.getUserById(userId);
-
         if(user == null) {
             return "redirect:/";
         }
 
-        model.addAttribute("user", userDao.getUserById(userId));
-
+        model.addAttribute("user", user);
         return "user";
     }
 }
