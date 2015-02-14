@@ -22,6 +22,7 @@ public class UsersController {
         }
 
         model.addAttribute("user", user);
-        return "user";
+        model.addAttribute("container", "user.ftl");
+        return "template";
     }
 }
