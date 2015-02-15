@@ -1,5 +1,18 @@
 <html>
+<head>
+    <title>4note</title>
+</head>
 <body>
-    <h2>Hej ${user.getUsername()}</h2>
+    <h2>Informacje o uzytkowniku:</h2>
+    <table>
+        <tr>
+            <td>Nazwa:</td>
+            <td>${user.getUsername()}</td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td>${user.getEmail()}</td>
+        </tr>
+    </table>
 </body>
 </html>
