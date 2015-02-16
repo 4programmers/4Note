@@ -32,17 +32,11 @@ public class UserDaoImpl implements UserDao {
 
     @Transactional
     public User create(String username, String password) {
-        User user = new User();
-
-        user.setUsername(username);
-        user.setPassword(password);
-        user.setEmail("fakeemail@gmail.com");
-        user.setEnabled(true);
-
+        User user = new User(username, password, "fakeemail@gmail.com", true);
         Role role = new Role(user, "ROLE_USER");
         Set<Role> roles = new HashSet<Role>();
+        
         roles.add(role);
-
         user.setRoles(roles);
 
         em.persist(user);
