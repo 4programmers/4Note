@@ -1,5 +1,5 @@
-<h1>4Notes</h1>
-<p>This is an example of 4Notes homepage</p>
-<p>
-    <a class="btn btn-lg btn-success" role="button">Action</a>
-</p>
+<@layout.extends name="template.ftl">
+    <@layout.put block="content" type="replace">
+        <h1>Welcome to 4Notes</h1>
+    </@layout.put>
+</@layout.extends>
