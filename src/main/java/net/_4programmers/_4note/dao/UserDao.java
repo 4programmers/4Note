@@ -1,13 +1,11 @@
 package net._4programmers._4note.dao;
 
-import net._4programmers._4note.entities.User;
-
-import java.util.List;
+import net._4programmers._4note.entity.User;
 
 public interface UserDao {
-    User getUserById(Integer id);
+    User findById(Integer id);
 
-    List<User> getAll();
+    User findByUsername(String username);
 
-    void deleteUser(User user);
+    User create(String username, String password);
 }
