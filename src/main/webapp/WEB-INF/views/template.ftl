@@ -36,10 +36,8 @@
 </@layout.block>
 
 <div class="container">
-    <div class="jumbotron content">
-        <@layout.block name="content">
-        </@layout.block>
-    </div>
+    <@layout.block name="content">
+    </@layout.block>
 </div>
 
 
