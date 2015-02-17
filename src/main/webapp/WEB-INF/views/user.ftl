@@ -1,18 +1,10 @@
-<html>
-<head>
-    <title>4note</title>
-</head>
-<body>
-    <h2>Informacje o uzytkowniku:</h2>
-    <table>
-        <tr>
-            <td>Nazwa:</td>
-            <td>${user.getUsername()}</td>
-        </tr>
-        <tr>
-            <td>Email:</td>
-            <td>${user.getEmail()}</td>
-        </tr>
-    </table>
-</body>
-</html>
+<@layout.extends name="template.ftl">
+
+    <@layout.put block="content" type="replace">
+        <div class="jumbotron content">
+            <h1>Hello, ${user.getUsername()}!</h1>
+            <p>Here is your email: ${user.getEmail()}</p>
+        </div>
+    </@layout.put>
+
+</@layout.extends>

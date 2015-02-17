@@ -1,0 +1,25 @@
+body {
+    padding-top: 50px;
+}
+
+.jumbotron {
+    text-align: center;
+}
+
+.content {
+    min-height: 600px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 10px;
+    border-top: 1px solid #dcdcdc;
+
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    background-color: #222;
+}
